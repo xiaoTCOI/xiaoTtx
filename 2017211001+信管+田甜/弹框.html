@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	<script >
+		 var y =parseInt(prompt("请输入你的出生年份"));
+         var m = parseInt(prompt("请输入你的出生月份"));
+         var d =parseInt(prompt("请输入你的出生日期"));
+         var getMonth=new Array(31,28,31,30,31,30,31,31,30,31,30);
+         var sum1=0,i;
+         
+
+        for(i=0;i<m-1&&m<13&&d<32;i++)
+          {
+              sum1+=getMonth[i]
+          }
+
+        if( y%400 ==0||(y % 4 == 0&& y%100 !=0)&& m > 2)
+          { 
+          	if (m<13&&d<32)
+          	 {
+              sum=sum1 + d +1;
+              document.write("你出生在该年中的第"+sum+"天");
+             }
+             else
+             {
+             	document.write("月份或日期输入有误，请重新输入")
+             }
+          }
+        else 
+          {
+          	if (m<13&&d<32) 
+          	{
+               sum=sum1+d;
+               document.write("你出生在该年中的第"+sum+"天");
+            }
+            else
+            {
+            	document.write("月份或日期输入有误，请重新输入")
+            }
+
+          } 
+
+
+             
+
+	</script>
+	
+
+</body>
+</html>

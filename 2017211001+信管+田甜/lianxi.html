@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var d = 0;
+		var h = 0;
+		var m = 0;
+		var s = 0;
+		var t ;
+		function jsq()
+		{
+			t = setTimeout("jsq()",1000);
+			s = s + 1;
+			 if (s>=60)
+			 {
+			 	s=0;
+			 	m=m+1;
+			 }
+			 if (m>=60)
+			  {
+			  	m=0;
+			  	h=h+1;
+			  }
+			  if (h>=24) 
+			  {
+			  	h=0;
+			  	d=d+1;
+			  }
+			  document.getElementById('jhm').value = d+"D"+";"+h+"H"+":"+m+"M"+":"+s+"S";
+		}
+      
+	</script>
+	<style type="text/css">
+		.one{
+			width: 1354px;
+			height: 100px;
+			font-weight: 30px;
+		   background-color: black;
+
+		}
+		#jhm{
+			width: 1350px;
+			height: 200px;
+			font-size: 100px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="one">
+		<input type="button" value="开始计时" onClick="jsq()">
+	    <input type="text" id="jhm" >
+	</div>
+
+</body>
+</html>
