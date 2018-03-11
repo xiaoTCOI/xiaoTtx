@@ -1,0 +1,35 @@
+h1{
+	text-align: center;
+}
+#picture,#restart,#change-picture{
+	margin-top: 50px;
+	/*background-color: pink;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+#picture{
+	width: 420px;
+	height: 420px;
+	position: relative;
+}
+#picture div{
+	width: 138px;
+	height: 138px;
+	border: 1px solid black;
+	float: left;
+
+}
+#picture div img{
+	width: 138px;
+	height: 138px;
+	cursor: pointer;
+	position: absolute;
+}
+#restart button{
+	margin-left: 600px;
+	width: 150px;
+    height: 40px;
+    font-size: 15px;
+}
+
+
